@@ -1,0 +1,177 @@
+body {
+  background-color:rgb(193, 231, 255);
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-row: 100px;
+  align-content: center;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+header {
+  grid-column: 2;
+  grid-row: 1;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+header > button {
+  color: white;
+  background-color: rgb(226, 160, 37);
+  border: none;
+  height: 40px;
+  font-weight: 600;
+  border-radius: 25px;
+  width: 120px;
+}
+
+header > button > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header > button:hover {
+  cursor: pointer;
+  background-color: rgb(236, 204, 114);
+}
+
+form.new-todo {
+  grid-column: 3;
+  grid-row: 2;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid black;
+  max-width: 300px;
+  border-radius: 15px;
+  justify-self: center;
+  background-color: antiquewhite;
+}
+
+form > div > input,
+form > p,
+form > div > button {
+  display: block;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+}
+
+form > div,
+form > p {
+  margin-bottom: 10px;
+}
+
+form > div > button {
+  color: white;
+  background-color: rgb(226, 160, 37);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+form > div > button:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(180, 180, 180);
+}
+
+.sidebar {
+  display: none;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.sidebar > ul {
+  grid-column: 1;
+  display: grid;
+  gap: 20px;
+}
+
+ul > .menu-item {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 248, 152);
+  border-radius: 5px;
+  border: none;
+  border: 2px solid black;
+  font-weight: 500;
+  width: 80%;
+  height: 150%;
+}
+
+ul > .menu-item:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(180, 180, 180);
+  cursor: pointer;
+}
+
+.new-project-btn {
+  background-color: rgb(255, 157, 157);
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  border: none;
+  border: 2px solid black;
+  font-weight: 700;
+  width: 80%;
+  height: 150%;
+}
+
+.new-project-btn:hover {
+  background-color: firebrick;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  color: white;
+}
+
+main {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+main > ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+main > ul > li {
+  color: black;
+  padding: 10px 20px 20px 10px;
+  border-radius: 15px;
+  display: grid;
+}
+
+main > ul > li > h4 {
+  place-self: center;
+}
+
+main > ul > li.todo1,
+main > ul > li.todo2,
+main > ul > li.todo3 {
+  background-color: rgb(136, 255, 136);
+}
+
+main > ul > li.todo4,
+main > ul > li.todo5,
+main > ul > li.todo6 {
+  background-color: rgb(255, 255, 131);
+}
+
+main > ul > li.todo7,
+main > ul > li.todo8,
+main > ul > li.todo9 {
+  background-color: rgb(255, 131, 131);
+}
+
+main > ul > li.todo10 {
+  color: white;
+  background-color: black;
+}

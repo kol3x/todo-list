@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./main.js"></script>
+    <title>Todo-list</title>
+  </head>
+  <body>
+    <header>
+      <button class="switch-menu-btn">sidemenu</button>
+      <button><a href="./">home</a></button>
+      <button class="new-todo-btn">make todo</button>
+    </header>
+    <div class="sidebar">
+      <ul>
+        <button class="menu-item first-project">Project 0</button>
+        <button class="new-project-btn" id="new-project-btn">
+          NEW PROJECT
+        </button>
+      </ul>
+    </div>
+
+    <form class="new-todo">
+      <p>New task</p>
+      <div>
+        <label for="title" >Title:</label>
+        <input type="text" name="title" id="title" />
+      </div>
+      <div>
+        <label for="description">Description:</label>
+        <input type="text" name="description" id="description" />
+      </div>
+      <div>
+        <label for="date">Due date:</label>
+        <input type="date" name="date" id="date" />
+      </div>
+      <div>
+        <label for="prio">Prio:</label>
+        <input
+          type="number"
+          name="prio"
+          id="prio"
+          placeholder="from 1 to 10"
+          min="1"
+          max="10"
+          step="1"
+        />
+      </div>
+      <div>
+        <label for="projectNumber">Project:</label>
+        <input type="number" name="projectNumber" id="projectNumber" />
+      </div>
+      <div>
+        <button type="submit">Add to-do</button>
+      </div>
+    </form>
+    <main>
+      <ul class="todos">
+      </ul>
+    </main>
+  </body>
+</html>
